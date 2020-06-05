@@ -92,11 +92,11 @@
           "description": "Administrator password for Hasura console."
         }
       },
-      "hasuraAddress": {
+      "hasuraConsoleDomain": {
         "type": "string",
         "defaultValue": null,
         "metadata": {
-          "description": "Domain used by caddy for generating SSL certificates and over which Hasura console is served. Should be a URL."
+          "description": "Domain used by caddy for generating SSL certificates and over which Hasura console is served. Should be of the form example.com or *.example.com"
         }
       }
     },
@@ -114,7 +114,7 @@
       "containerImage": "hasura/graphql-engine:latest",
       "adminSecret": "[parameters('hasuraAdminSecret')]",
       "hasuraPort": 8080,
-      "hasuraURL": "[parameters('hasuraAddress')]"
+      "hasuraURL": "[parameters('hasuraConsoleDomain')]"
     },
     "resources": [
       {
