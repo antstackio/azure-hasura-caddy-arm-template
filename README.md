@@ -1,6 +1,6 @@
 # Hasura TLS with Caddy server ARM Templates
 
-ARM templates to easily deploy Hasura Engine with TLS on Azure using Caddy. [Read our blog to learn more.](#)
+ARM templates to easily deploy Hasura Engine with TLS on Azure using Caddy. [Read our blog to learn more.](https://www.antstack.io/blog/how-to-enable-tls-for-hasura-graphql-engine-in-azure-caddy/)
 
 ## Deploy Hasura with a new PostgreSQL server
 
